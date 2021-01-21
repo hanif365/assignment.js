@@ -1,7 +1,11 @@
 /*
+
 //Task 1: A Program to convert kilometer to meter.
 
 function kilometerToMeter(kiloMeter){
+    if(kiloMeter < 0){
+        return "Error! The kilometer value can not be negative. Please give a positive value of kilometer."
+    }
     var meter;
     meter = kiloMeter * 1000;   // 1 kilometer = 1000 meter.
     return meter;
@@ -9,8 +13,9 @@ function kilometerToMeter(kiloMeter){
 
 var result1 = kilometerToMeter(15);
 console.log(result1);
-*/
 
+
+*/
 
 
 
