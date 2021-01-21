@@ -49,5 +49,43 @@ console.log(result2);
 
 
 
+/*
+
+// Task 3: Calculate hotel cost.
+
+
+function hotelCost(dayCount){
+    if(dayCount<0){
+        return "Error! Day Count can not be a negative value. Please give a positive value. E.g., 25"
+    }
+    else if(dayCount<=10){
+        var costWithNoDiscount = dayCount * 100;
+        var totalCost = costWithNoDiscount;
+        return totalCost;
+    }
+    else if(dayCount<=20){
+        var costWithNoDiscount = 10 * 100;
+        var remainingDay = dayCount - 10;
+        var costWithMiniDiscount = remainingDay * 80;
+        var totalCost = costWithNoDiscount + costWithMiniDiscount;
+        return totalCost;
+    }
+    else{
+        var costWithNoDiscount = 10 * 100;
+        var costWithMiniDiscount = 10 * 80;
+        var remainingDay = dayCount - 20;
+        var costWithMegaDiscount = remainingDay * 50;
+        var totalCost = costWithNoDiscount + costWithMiniDiscount + costWithMegaDiscount;
+        return totalCost;
+    }
+}
+
+var result3 = hotelCost(25);
+console.log(result3);
+
+
+*/
+
+
 
 
