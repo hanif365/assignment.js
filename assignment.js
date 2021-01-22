@@ -14,9 +14,6 @@ function kilometerToMeter(kiloMeter){
     return meter;
 }
 
-var result1 = kilometerToMeter(5);
-console.log(result1);
-
 
 //============================================> End of Task 1 <===============================================
 
@@ -46,9 +43,6 @@ function budgetCalculator(watchCount, phoneCount, laptopCount){
 
     return totalBudget;
 }
-
-var result2 = budgetCalculator(1,1,1);
-console.log(result2);
 
 
 //==========================================> End of Task 2 <===============================================
@@ -84,9 +78,6 @@ function hotelCost(dayCount){
         return totalCost;
     }
 }
-
-var result3 = hotelCost(60);
-console.log(result3);
 
 
 //===========================================> End of Task 3 <================================================
@@ -124,10 +115,6 @@ function megaFriend(friendNameArray) {
     }
 
 }
-
-var longestname = megaFriend(["Hanif", "Hasan", "Rahman"]);
-
-console.log(longestname);
 
 
 //===========================================> End of Task 4 <================================================
