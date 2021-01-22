@@ -14,7 +14,7 @@ function kilometerToMeter(kiloMeter){
     return meter;
 }
 
-var result1 = kilometerToMeter(10);
+var result1 = kilometerToMeter(5);
 console.log(result1);
 
 
@@ -85,7 +85,7 @@ function hotelCost(dayCount){
     }
 }
 
-var result3 = hotelCost(30);
+var result3 = hotelCost(60);
 console.log(result3);
 
 
@@ -103,9 +103,9 @@ function megaFriend(friendNameArray) {
 
     var longestString = friendNameArray[0];
 
-    //  Iteration(i) begins from 1 because first array value store in above longestString variable 
-    //  and at first we consider first array value is the longest string and then comparing it other's array values.
-    // If any other array value's length is greater than longestString length then that array element will assign into longestString variable.
+     /* Iteration(i) begins from 1 because first array value store in above longestString variable 
+     and at first we consider first array value is the longest string and then comparing it other's array values.
+    If any other array value's length is greater than longestString length then that array element will assign into longestString variable. */
 
     for (var i = 1; i < friendNameArray.length; i++) {
         if (friendNameArray[i].length > longestString.length) {
