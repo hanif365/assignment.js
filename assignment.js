@@ -1,6 +1,7 @@
 
 
-//Task 1: A Program to convert kilometer to meter.
+//=======================> Start of Task 1: A Program to convert kilometer to meter.<=========================
+
 
 function kilometerToMeter(kiloMeter){
 
@@ -9,7 +10,7 @@ function kilometerToMeter(kiloMeter){
         return "Error! The kilometer value can not be negative. Please give a positive value of kilometer."
     }
     var meter;
-    meter = kiloMeter * 1000;   // 1 kilometer = 1000 meter.
+    meter = kiloMeter * 1000;   // We know, 1 kilometer = 1000 meter.
     return meter;
 }
 
@@ -17,13 +18,13 @@ var result1 = kilometerToMeter(10);
 console.log(result1);
 
 
+//============================================> End of Task 1 <===============================================
 
 
 
 
+//=================================> Start of  Task 2: Budget Calculator <====================================
 
-
-// Task 2: Budget Calculator
 
 function budgetCalculator(watchCount, phoneCount, laptopCount){
 
@@ -50,12 +51,12 @@ var result2 = budgetCalculator(1,1,1);
 console.log(result2);
 
 
+//==========================================> End of Task 2 <===============================================
 
 
 
 
-
-// Task 3: Calculate hotel cost.
+//=============================> Start of Task 3: Calculate total hotel cost. <=============================
 
 
 function hotelCost(dayCount){
@@ -88,13 +89,15 @@ var result3 = hotelCost(30);
 console.log(result3);
 
 
+//===========================================> End of Task 3 <================================================
 
 
 
 
 
+//===================> Start of Task 4: Find longest friend name(longest string) in an array. <==================
 
-// Task 4: Find longest friend name(longest string) in an array.
+
 
 function megaFriend(friendNameArray) {
 
@@ -127,4 +130,4 @@ var longestname = megaFriend(["Hanif", "Hasan", "Rahman"]);
 console.log(longestname);
 
 
-
+//===========================================> End of Task 4 <================================================
