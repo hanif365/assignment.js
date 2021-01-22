@@ -1,8 +1,10 @@
-/*
+
 
 //Task 1: A Program to convert kilometer to meter.
 
 function kilometerToMeter(kiloMeter){
+
+    // If kilometer value is negative then function return an error message.
     if(kiloMeter < 0){
         return "Error! The kilometer value can not be negative. Please give a positive value of kilometer."
     }
@@ -11,15 +13,14 @@ function kilometerToMeter(kiloMeter){
     return meter;
 }
 
-var result1 = kilometerToMeter(15);
+var result1 = kilometerToMeter(10);
 console.log(result1);
 
 
-*/
 
 
 
-/*
+
 
 
 // Task 2: Budget Calculator
@@ -27,7 +28,6 @@ console.log(result1);
 function budgetCalculator(watchCount, phoneCount, laptopCount){
 
     // If any of the product Count values is negative then the function returns an error message.
-
     if((watchCount < 0) || (phoneCount < 0) || (laptopCount < 0)){
         return "Error! Product count is not considered a negative value. Please give a positive product count.";
     }
@@ -46,15 +46,14 @@ function budgetCalculator(watchCount, phoneCount, laptopCount){
     return totalBudget;
 }
 
-var result2 = budgetCalculator(10,10,10);
+var result2 = budgetCalculator(1,1,1);
 console.log(result2);
 
-*/
 
 
 
 
-/*
+
 
 // Task 3: Calculate hotel cost.
 
@@ -85,42 +84,47 @@ function hotelCost(dayCount){
     }
 }
 
-var result3 = hotelCost(25);
+var result3 = hotelCost(30);
 console.log(result3);
 
 
-*/
 
 
-// Find longest friend name an array
 
-function megaFriend(friendNameArray){
+
+
+
+// Task 4: Find longest friend name(longest string) in an array.
+
+function megaFriend(friendNameArray) {
 
     var longestString = friendNameArray[0];
 
-    /* Iteration(i) begins from 1 because first array value store in above longestString variable 
-     and at first we consider first array value is the longest string and then comparing it other's array values.
-     If any other array value's length is greater than longestString length then that array element will assign into longestString variable. */
+    //  Iteration(i) begins from 1 because first array value store in above longestString variable 
+    //  and at first we consider first array value is the longest string and then comparing it other's array values.
+    // If any other array value's length is greater than longestString length then that array element will assign into longestString variable.
 
-    for(var i=1;i<friendNameArray.length;i++){
-        if(friendNameArray[i].length > longestString.length){
+    for (var i = 1; i < friendNameArray.length; i++) {
+        if (friendNameArray[i].length > longestString.length) {
             longestString = friendNameArray[i];
         }
     }
 
-    /* If all string length are zero then return an error message.
-       E.g., var longestname = megaFriend(["","",""]); */
+    // If all string length are zero then return an error message.
+    // E.g., var longestname = megaFriend(["","",""]);
 
-    if(longestString.length == 0){
+    if (longestString.length == 0) {
         return "Error! All of the strings are empty!.";
     }
-    else{
+    else {
         return longestString;
     }
-    
+
 }
 
-var longestname = megaFriend(["Hanif","Hasan","Abdur Rahman"]);
+var longestname = megaFriend(["Hanif", "Hasan", "Rahman"]);
 
 console.log(longestname);
+
+
 
