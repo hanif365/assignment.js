@@ -92,5 +92,35 @@ console.log(result3);
 */
 
 
+// Find longest friend name an array
 
+function megaFriend(friendNameArray){
+
+    var longestString = friendNameArray[0];
+
+    /* Iteration(i) begins from 1 because first array value store in above longestString variable 
+     and at first we consider first array value is the longest string and then comparing it other's array values.
+     If any other array value's length is greater than longestString length then that array element will assign into longestString variable. */
+
+    for(var i=1;i<friendNameArray.length;i++){
+        if(friendNameArray[i].length > longestString.length){
+            longestString = friendNameArray[i];
+        }
+    }
+
+    /* If all string length are zero then return an error message.
+       E.g., var longestname = megaFriend(["","",""]); */
+
+    if(longestString.length == 0){
+        return "Error! All of the strings are empty!.";
+    }
+    else{
+        return longestString;
+    }
+    
+}
+
+var longestname = megaFriend(["Hanif","Hasan","Abdur Rahman"]);
+
+console.log(longestname);
 
